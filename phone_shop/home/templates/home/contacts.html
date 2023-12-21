@@ -4,7 +4,7 @@
 <div class="container-fluid" style="background: url('static/home/img/natural-paper.png'); height: 100px; padding-top: 25px;">
     <div class="row justify-content-md-center align-items-center">
         <div class="col col-1 ">
-            <i class="fa fa-home w3-xxxlarge"></i>
+            <a href="{% url 'home' %}" ><i class="fa fa-home w3-xxxlarge"></i></a>
         </div>
         <div class="col-2">
             <p class="h3" style="padding-top: 10px;">
@@ -38,7 +38,7 @@
         </div>
         <div class="col-1 text-center">
             <p>
-                <a href="{% url 'about' %}" class="text-decoration-underline text-reset">О компании</a>
+                <a href="" class="text-decoration-underline text-reset">О компании</a>
             </p>
         </div>
         <div class="col-1 text-center">
@@ -53,112 +53,50 @@
         </div>
         <div class="col-1 text-center">
             <p>
-                <a href="" class="text-decoration-underline text-reset">Контакты</a>
+                <a href="{% url 'contacts' %}" class="text-decoration-underline text-reset">Контакты</a>
             </p>
         </div>
     </div>
 </div>
 {% endblock %}
 {% block content %}
-<div class="container-fluid bg-light" style="padding-top: 20px;">
-    <div class="row justify-content-md-center">
-        <div class="col-4">
-            <p class="h1" style="padding-left: 60px;">
-                <strong>
-                    Популярные товары
-                </strong>
+<div class="container-fluid bg-light ">
+    <div class="row text-center">
+        <div class="col">
+            <p class="h1">
+                Наши контакты 
             </p>
-            <p class="h2">
-                Что чаще всего покупают наши клиенты
+            <p class="fs-3">
+                Вы всегда сможете связаться с нами
             </p>
         </div>
     </div>
-</div>
-<div class="container-fluid bg-light" style="padding-top: 20px; text-align: center;">
-    <div class="row" style="justify-content: center">
-        <div class="col-2 fs-1 text-center " style="background-color: #689CD2; color: aliceblue; height: min-content;">
-            <div class="row border-bottom" style="margin-top: 40px;">
-                <button type="button" class="btn " style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Популярные товары
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Apple
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Samsung
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Honor
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom" style="margin-bottom: 40px;">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Huawei
-                    </p>
-                </button>
-            </div>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <p class="fs-2">
+                Интернет магазин телефонов
+            </p>
+            <p>
+                <ul class="list-group list-group-flush bg-light fs-2" style="padding-left: 30px;">
+                  <li class="list-group-item">• Адрес: г.Чебоксары, ул. Центральная 1, офис 100</li>
+                  <li class="list-group-item">• Телефон: +7(800)333-22-33</li>
+                  <li class="list-group-item">• Email: mail@gmail.com</li>
+                </ul>
+            </p>
         </div>
-        <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/1.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row" style="justify-content: start; padding-left: 120px;">
-                <div class="col-2" style=" padding-top: 17px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/2.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" style="padding-left: 40px; padding-top: 10px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/3.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" style="padding-left: 40px; padding-top: 10px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
-                </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col text-center">
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
+                    Ульяновск
+                </a>
+                <a href="https://yandex.ru/maps/11153/ulyanovsk-oblast/house/tsentralnaya_ulitsa_1/YEEYdQNjQUAFQFtufX5zcHtlbQ==/?ll=48.343852%2C54.221769&utm_medium=mapframe&utm_source=maps&z=16.56" style="color:#eee;font-size:12px;position:absolute;top:14px;">Центральная улица, 1 — Яндекс Карты
+                    
+                </a>
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=48.343852%2C54.221769&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNzIzMjg2OTA2EpIB0KDQvtGB0YHQuNGPLCDQs9C-0YDQvtC00YHQutC-0Lkg0L7QutGA0YPQsyDQo9C70YzRj9C90L7QstGB0LosINC_0L7RgdGR0LvQvtC6INC40LzQtdC90Lgg0JrQsNGA0LDQvNC30LjQvdCwLCDQptC10L3RgtGA0LDQu9GM0L3QsNGPINGD0LvQuNGG0LAsIDEiCg0bYEFCFRjjWEI%2C&z=16.56" width="1170" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+
+                </iframe>
             </div>
         </div>
     </div>

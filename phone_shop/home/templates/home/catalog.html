@@ -4,7 +4,7 @@
 <div class="container-fluid" style="background: url('static/home/img/natural-paper.png'); height: 100px; padding-top: 25px;">
     <div class="row justify-content-md-center align-items-center">
         <div class="col col-1 ">
-            <i class="fa fa-home w3-xxxlarge"></i>
+            <a href="{% url 'home' %}" ><i class="fa fa-home w3-xxxlarge"></i></a>
         </div>
         <div class="col-2">
             <p class="h3" style="padding-top: 10px;">
@@ -53,7 +53,7 @@
         </div>
         <div class="col-1 text-center">
             <p>
-                <a href="" class="text-decoration-underline text-reset">Контакты</a>
+                <a href="{% url 'contacts' %}" class="text-decoration-underline text-reset">Контакты</a>
             </p>
         </div>
     </div>
@@ -61,33 +61,28 @@
 {% endblock %}
 {% block content %}
 <div class="container-fluid bg-light" style="padding-top: 20px;">
-    <div class="row justify-content-md-center">
-        <div class="col-4">
-            <p class="h1" style="padding-left: 60px;">
-                <strong>
-                    Популярные товары
-                </strong>
-            </p>
-            <p class="h2">
-                Что чаще всего покупают наши клиенты
+    <div class="row text-center">
+        <div class="col">
+            <p class="h1">
+                Каталог товаров
             </p>
         </div>
     </div>
 </div>
 <div class="container-fluid bg-light" style="padding-top: 20px; text-align: center;">
-    <div class="row" style="justify-content: center">
+    <div class="row g-4" style="justify-content: center">
         <div class="col-2 fs-1 text-center " style="background-color: #689CD2; color: aliceblue; height: min-content;">
             <div class="row border-bottom" style="margin-top: 40px;">
                 <button type="button" class="btn " style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
                     <p class="fs-3">
-                        Популярные товары
+                        Все категории
                     </p>
                 </button>
             </div>
             <div class="row border-bottom">
                 <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
                     <p class="fs-3">
-                        Смартфоны Apple
+                        Популярные товары
                     </p>
                 </button>
             </div>
@@ -146,6 +141,150 @@
             </div>
         </div>
         <div class="col-3">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/3.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 230px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/1.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 230px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/2.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 230px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/3.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="padding-left: 230px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/1.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 130px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/2.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 130px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/3.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="padding-left: 230px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/1.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 130px;">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'home/img/2.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding-left: 40px; padding-top: 10px;">
+                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
+                        <p class="fs-3">
+                            В корзину
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="padding-left: 130px;">
             <div class="row">
                 <div class="col">
                     <img src="{% static 'home/img/3.jpg' %}" alt="">

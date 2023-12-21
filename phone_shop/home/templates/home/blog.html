@@ -4,7 +4,7 @@
 <div class="container-fluid" style="background: url('static/home/img/natural-paper.png'); height: 100px; padding-top: 25px;">
     <div class="row justify-content-md-center align-items-center">
         <div class="col col-1 ">
-            <i class="fa fa-home w3-xxxlarge"></i>
+            <a href="{% url 'home' %}" ><i class="fa fa-home w3-xxxlarge"></i></a>
         </div>
         <div class="col-2">
             <p class="h3" style="padding-top: 10px;">
@@ -53,113 +53,66 @@
         </div>
         <div class="col-1 text-center">
             <p>
-                <a href="" class="text-decoration-underline text-reset">Контакты</a>
+                <a href="{% url 'contacts' %}" class="text-decoration-underline text-reset">Контакты</a>
             </p>
         </div>
     </div>
 </div>
 {% endblock %}
 {% block content %}
-<div class="container-fluid bg-light" style="padding-top: 20px;">
+<div class="container-fluid bg-light" style="padding-top: 30px;">
     <div class="row justify-content-md-center">
-        <div class="col-4">
-            <p class="h1" style="padding-left: 60px;">
-                <strong>
-                    Популярные товары
-                </strong>
-            </p>
-            <p class="h2">
-                Что чаще всего покупают наши клиенты
+        <div class="col text-center">
+             <p class="h1">
+                Блог нашего магазина
+             </p>
+        </div>
+    </div>
+    <div class="row text-center" style="padding-bottom: 30px;">
+        <div class="col">
+            <p class="fs-3">
+              Читайте интересные статьи у нас   
             </p>
         </div>
     </div>
-</div>
-<div class="container-fluid bg-light" style="padding-top: 20px; text-align: center;">
-    <div class="row" style="justify-content: center">
-        <div class="col-2 fs-1 text-center " style="background-color: #689CD2; color: aliceblue; height: min-content;">
-            <div class="row border-bottom" style="margin-top: 40px;">
-                <button type="button" class="btn " style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Популярные товары
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Apple
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Samsung
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Honor
-                    </p>
-                </button>
-            </div>
-            <div class="row border-bottom" style="margin-bottom: 40px;">
-                <button type="button" class="btn" style="height: 50px; width: 500px; padding-top: 8px; color: aliceblue;">
-                    <p class="fs-3">
-                        Смартфоны Huawei
-                    </p>
-                </button>
-            </div>
-        </div>
+    <div class="row" style="margin-left: 16.5%; ">
         <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/1.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row" style="justify-content: start; padding-left: 120px;">
-                <div class="col-2" style=" padding-top: 17px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
+            <div class="card text-white text-center" >
+                <img src="{% static 'home/img/blog1.jpg' %}" alt="" style="height: 277,48px; width: 369,98px;">
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.5); padding-top: 80px;">
+                    <h2 class="card-title">
+                        Почему Смартфон так <br>
+                        быстро разряжается 
+                    </h4>
+                    <p class="card-text fs-3"> 
+                        Несмотря на то, что мобильники умнеют и учатся использовать батарею эффективнее, их автономность вызывает нескончаемые жалобы.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/2.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" style="padding-left: 40px; padding-top: 10px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
+            <div class="card text-white text-center" >
+                <img src="{% static 'home/img/blog2.jpg' %}" alt="" style="height: 277,48px; width: 369,98px;">
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.5); padding-top: 80px;">
+                    <h2 class="card-title">
+                        Как выбрать Смартфон для <br>
+                        ребенка 
+                    </h4>
+                    <p class="card-text fs-3"> 
+                        Узнайте, по каким критериям нужно выбирать «мобильники» для детей разных возрастов и как организовать эффективную систему контроля за малышом.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="col-3">
-            <div class="row">
-                <div class="col">
-                    <img src="{% static 'home/img/3.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" style="padding-left: 40px; padding-top: 10px;">
-                    <button type="button" class="btn" style="height: 40px; width: 200px; color: aliceblue; background-color: #BF8F30;">
-                        <p class="fs-3">
-                            В корзину
-                        </p>
-                    </button>
-                </div>
-            </div>
+    </div>
+    <div class="row fs-3 justify-content-md-center" style="padding-top: 40px;">
+        <div class="col-8">
+            <p style="padding-top: 20px;">
+                Телефон может работать на основе систем Android, iOS, Windows Phone, имеет наибольшую популярность среди пользователей. Он оснащается множеством опций: путешествие по интернету, возможность установки игр и программ, прослушивание музыки и просмотр фильмов, радиоприёмник, различные датчики (шагомер, гироскоп и т. д.), видео и фотокамера. С его помощью легко проверить почту или работать с документами.
+            </p>
+            <p style="padding-top: 30px;">
+                В отличие от обычных мобильников, девайс содержит полноформатную клавиатуру. Цена определяет уровень возможностей и производительности смартфонов, но и бюджетные модели имеют весь необходимый функционал и достаточное быстродействие. Телефон оснащён встроенной ОС разработчика и содержит самые необходимые инструменты, обеспечивающие связь. Интерфейс дополняют будильник, календарь, аудиоплейер, камера. 
+            </p>
         </div>
     </div>
 </div>
